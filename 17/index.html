@@ -26,13 +26,25 @@
             color: blue;
             background-color: brown;
         }
+        /* Descendant selector */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
     </style>
 </head>
 
 <body>
     <div class="red">
         I am a div
-        <p>I am a para inside div</p>
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
     </div>
     <div id="green">
         I am another div
