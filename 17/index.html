@@ -31,10 +31,30 @@
             color: blue;
             background-color: brown;
         }
+        /* Universal selector */
         *{
             margin: 0;
             padding: 0;
         }
+        /* Pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link
+        {
+            color: green;
+        }
+        a:active
+        {
+            background-color: red;
+        }
+        a:hover
+        {
+            background-color: brown
+
+        }
+
+
     </style>
 </head>
 
@@ -49,6 +69,8 @@
     <div id="green">
         I am another div
     </div>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.facebook.com">Go to facebook</a>
 </body>
 
 </html>
