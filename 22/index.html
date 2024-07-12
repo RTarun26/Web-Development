@@ -10,7 +10,8 @@
             margin: 0;
             padding: 0;
         }
-        html{
+
+        html {
             font-size: 12px;
 
         }
@@ -28,20 +29,32 @@
             border: 2px solid black;
             /* width: 2048px; */
             width: 80vw;
+            min-height: 80vh;
             margin: 23px auto;
-            height: 80vh;
+            /* height: 80vh; */
             font-size: 16px;
             background-color: aquamarine;
         }
 
-        .container p {
+        .container > div {
             font-size: 2rem;
+            border: 2px solid red;
+            width: 50%;
         }
-        .mycont{
+
+        .container > div > div {
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont {
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
             background-color: red;
             color: yellow;
             font-size: 22px;
-            width: 100vmin ;
+            width: 80vw;
 
         }
     </style>
@@ -52,12 +65,21 @@
         This ia a box
     </div>
     <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis explicabo debitis repellat natus nemo
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis explicabo debitis repellat natus nemo
             minuscum rem quasi nulla id odio molestias iure illum, temporibus exercitationem dolor unde sed assumenda
             possimusquae eligendi aut incidunt iusto expedita! Tempora soluta ea, natus iste quibusdam ducimus, deserunt
             adipiscivoluptates, impedit temporibus sapiente laborum pariatur. Facere dolor pariatur praesentium?
-        </p>
+            <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, doloremque unde, illo ullam quo facilis
+                blanditiis magnam vel ex sit consequatur voluptas iure debitis dolor a? Eaque commodi, obcaecati nam asperiores
+                quae earum beatae nisi?
+            </div>
+    
+       </div>
+        <!-- Use lorem1000 here to see that the height of the container keeps on adjusting -->
+       
     </div>
+    
     <div class="mycont">
         I am another container
     </div>
