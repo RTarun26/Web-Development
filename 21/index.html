@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* Inline(1000)>id(100)>class or attribute(10)>Element(1)>universal(0)  */
+        /* The specificity of this is 1(Element) */
+        h1{
+            color: aqua;
+        }
+         /* The specificity of this is 10 (Class)*/
+        .yellow{
+            color: yellow;
+        }
+          /* The specificity of this is 10 (Class)*/
+        .cred{
+            color: red;
+        }
+          /* The specificity of this is 10 (Class)*/
+        .cpurple{
+            color: purple;
+        }
+        /* This is an example of attribute selector /The specificity of this is 10 */ 
+        [data-x=a]{
+            color: brown;
+        }
+         /* The specificity of this is 100 (ID)*/
+        #i{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" id="i" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>
