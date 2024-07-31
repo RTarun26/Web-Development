@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            float:right;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
 </head>
 <body>
-    
-</body>
+    <div class="cards">
+        <img src="https://th.bing.com/th/id/OIP.Mf1INgVXfFxAFEYfWX4aMwHaE8?rs=1&pid=ImgDetMain" alt="">
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nulla alias nihil non soluta, magni odio cum sint laborum nesciunt veniam necessitatibus voluptatem? Itaque tempora laborum consectetur odio ipsa cumque similique assumenda, impedit vel?</div>
+        <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque modi excepturi voluptate pariatur nemo sunt repellendus, ipsa nesciunt repellat sint rerum amet, minus placeat similique fuga totam autem voluptas et suscipit dignissimos molestias quos sapiente iure. Alias libero deserunt soluta velit quisquam voluptates? Voluptatem aliquam dolorem nemo. Hic ea blanditiis iusto ipsam provident consequatur, neque dolores, maxime officiis ipsa laudantium natus quaerat ad nam sequi distinctio nisi atque reprehenderit pariatur quibusdam debitis numquam, nobis error incidunt. Excepturi adipisci consectetur, accusantium repellat eligendi aliquid laudantium quaerat repudiandae a, ea sed deleniti nemo. Error quo tenetur id labore nihil impedit atque repudiandae ipsum ex quae earum, ab assumenda mollitia quasi eligendi libero necessitatibus non totam sunt optio repellat dolores minus! Molestiae nobis impedit ipsum nihil quasi recusandae eaque quos neque tempore, quis commodi, enim esse ab reprehenderit repellendus perferendis animi saepe delectus similique tempora. Aliquid, adipisci nostrum facilis quod laboriosam incidunt sapiente quas labore voluptates, id ullam fugiat impedit perferendis alias error, voluptatibus sit quo itaque provident quae magni iusto! Suscipit expedita pariatur vel nobis harum aperiam quos vero, doloribus quaerat assumenda optio minima dignissimos ex at magni provident rem, porro quis reiciendis ipsa hic minus cupiditate? Quas repellendus accusantium possimus ipsam ipsa temporibus in necessitatibus voluptatem, dolorum maiores sequi pariatur deleniti vel magni quaerat. Dolores, et? Voluptates hic eveniet vero, omnis molestiae officia impedit reiciendis sed ipsum quidem sit? Reprehenderit, tempore dolores? Laborum placeat, tempora dicta qui error pariatur voluptatem necessitatibus expedita est eligendi? Impedit obcaecati fugit earum nihil libero eveniet praesentium ea repellendus adipisci amet. Esse itaque iste possimus quis aut corporis nesciunt sint delectus doloremque assumenda unde corrupti excepturi nemo asperiores, molestias alias ad numquam quidem blanditiis deleniti, non perspiciatis, neque facilis voluptatem. Quae quia eligendi mollitia omnis voluptas vitae quis minus optio hic, tenetur accusamus. Similique, eum. Dolores, ea! Nostrum nulla minima doloremque, consectetur doloribus natus molestias iure minus sunt cupiditate ipsum eaque fuga rem vero corporis possimus repellendus labore ratione a repellat, ad, magnam dolorum numquam quae! Error, vero voluptatem quas mollitia repellendus necessitatibus corporis blanditiis rerum! Deleniti odio alias voluptate vel.
+        </div>
+        <div class="card">Card 3</div>
+    </div>
 </html>
